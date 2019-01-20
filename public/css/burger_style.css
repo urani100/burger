@@ -1,0 +1,42 @@
+body{
+  background: white;
+}
+.container{
+  padding-top: 15px;
+  width: 700px;
+  height: 400px;
+  margin: 30px auto 0 auto; 
+}
+.not-devouredx{
+  padding-left: 120px;
+  float: left;
+}
+
+.devouredx{
+  padding-left: 120px;
+  float: left;
+}
+.addburger-formx{
+  float: left;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: white;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+  
