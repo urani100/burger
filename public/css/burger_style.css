@@ -1,42 +1,81 @@
 body{
-  background: white;
+  /* background: white; */
+  background: url("../images/bckgd.png"); 
 }
+
 .container{
-  padding-top: 15px;
+  padding-top: 10px;
   width: 700px;
-  height: 400px;
+  /* height: 400px; */
   margin: 30px auto 0 auto; 
 }
-.not-devouredx{
+h1{
+  text-align: center;
+  font-family: cursive; 
+  font-size: 40px;
+  color: black;
+  letter-spacing: 10px;
+  
+}
+.not-devoured{
+  width: 30%;
+  /* border: 2px solid orange; */
   padding-left: 120px;
   float: left;
 }
 
-.devouredx{
+.devoured{
+  width: 30%;
+  /* border: 2px solid blue; */
   padding-left: 120px;
   float: left;
 }
-.addburger-formx{
+
+
+.add-burger{
+  width: 100%;
+  /* border: 2px solid green; */
   float: left;
+  
 }
 
 li {
-    padding: 5px;
-    margin: 5px;
-    background: white;
+    width: 320px;
+    padding: 1px;
+    margin: 1px;
+    /* background: white; */
+    font-family: cursive; 
+    font-size: 20px;
   }
   
   .label {
     font-weight: bold;
   }
   
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  .form-group {
+
+  .addburger-form{
     margin-bottom: 5px;
+    margin-left: 210px;
+  }
+
+  #img{
+    padding-left: 150px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+  }
+
+  #brg-label{
+    text-align: center;
+    font-family: cursive; 
+    font-size: 20px;
+    color: black;
   }
   
+  #btn{
+    margin-left: 20px; 
+   
+  }
+  #brg{
+    width: 250px;
+    height: 18px;
+  }

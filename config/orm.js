@@ -1,12 +1,6 @@
 
-
-
-
 // MySQL connection.
 var connection = require("../config/connection.js");
-
-
-
 // orm Object encompasses SQL functions.
 var orm = {
  selectAll: function(table, cb) {
@@ -29,7 +23,7 @@ var orm = {
       cb(result);
     });
   },
-  // updateOne()
+  // updateOne() update function name
   update: function(table, objColVals, condition, cb) {
     console.log(objColVals);
     //var queryString = "UPDATE " + table + " SET devoured = " +  objColVals.devoured + " WHERE " + condition;
@@ -42,20 +36,8 @@ var orm = {
       cb(result);
     });
   }
-//   delete: function(table, condition, cb) {
-//     var queryString = "DELETE FROM " + table;
-//     queryString += " WHERE ";
-//     queryString += condition;
 
-//     connection.query(queryString, function(err, result) {
-//       if (err) {
-//         throw err;
-//       }
-
-//       cb(result);
-//     });
-//   }
  };
 
-// Export the orm object for the model (cat.js).
+// Export the orm object
 module.exports = orm;
