@@ -12,7 +12,7 @@ var orm = {
       cb(result);
     });
   },
-
+//insert function
   insertOne:function(table, cols, vals, cb) {
     var query = "INSERT INTO " + table + " (burger_name)  VALUES (?)" 
     console.log(query, cols, vals);
@@ -22,10 +22,9 @@ var orm = {
       cb(result);
     });
   },
-  // updateOne() update function name
+  // update function name
   update: function(table, objColVals, condition, cb) {
     console.log(objColVals);
-    //var queryString = "UPDATE " + table + " SET devoured = " +  objColVals.devoured + " WHERE " + condition;
     var queryString = "UPDATE " + table + " SET devoured = 1 WHERE " + condition
     connection.query(queryString,[objColVals, condition], function(err, result) {
       if (err) throw err;
