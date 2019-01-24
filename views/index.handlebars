@@ -2,10 +2,10 @@
 <div class="container">
         
     <h1>enjoy the burger</h1>
-
+    
       <img src="/images/burgerImg.png" alt="burger" id="img">
 
-
+   {{! Not Devoured form }}
     <div class='add-burger'>
       <h2 id='brg-label'>add a burger</h2>
         <form class="addburger-form">
@@ -13,9 +13,9 @@
           <button type="submit" id='btn'>submit</button>
         </form>
     </div>
-          
+    
+    {{! Not Devoured div}}
     <div class='not-devoured'>
-    {{!-- <h2>To be Devoured</h2> --}}
     <ul>
       {{#each burgers}}
         {{#unless devoured}}
@@ -25,16 +25,16 @@
     </ul>
     </div>
 
+  {{! Devoured div}}
     <div class='devoured'>
-      {{!-- <h2>Devoured</h2> --}}
+      
     <ul>
       {{#each burgers}}
         {{#if devoured}}
         
           <p>
             {{this.id}}. {{this.burger_name}}
-          
-        </li>
+          </p>   
         {{/if}}
       {{/each}}
     </ul>

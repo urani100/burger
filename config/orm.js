@@ -15,7 +15,7 @@ var orm = {
 //insert function
   insertOne:function(table, cols, vals, cb) {
     var query = "INSERT INTO " + table + " (burger_name)  VALUES (?)" 
-    console.log(query, cols, vals);
+    
     connection.query(query, vals, function(err, result) {
       if (err) {throw err};
       
@@ -23,8 +23,8 @@ var orm = {
     });
   },
   // update function name
-  update: function(table, objColVals, condition, cb) {
-    console.log(objColVals);
+  updateOne: function(table, objColVals, condition, cb) {
+    
     var queryString = "UPDATE " + table + " SET devoured = 1 WHERE " + condition
     connection.query(queryString,[objColVals, condition], function(err, result) {
       if (err) {throw err};
@@ -36,5 +36,5 @@ var orm = {
 
  };
 
-// Export the orm object
+// export the orm 
 module.exports = orm;

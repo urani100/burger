@@ -8,20 +8,21 @@ var burger = {
       cb(res);
     });
   },
-  //accessing the nsertOne query from orm file
+  //accessing the insertOne query from orm file
   create: function(cols, vals, cb) {
     orm.insertOne("burgers", cols, vals, function(res) {
       cb(res);
     });
   },
   
+  //accessing the updateOne query from orm file
   update: function(objColVals, condition, cb) {
-    orm.update("burgers", objColVals, condition, function(res) {
+    orm.updateOne("burgers", objColVals, condition, function(res) {
       cb(res);
     });
   }
 
 };
 
-// Export the database functions for the controller (catsController.js).
+// export burger
 module.exports = burger;
