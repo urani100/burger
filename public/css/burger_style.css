@@ -16,12 +16,14 @@ h1{
   
 }
 .not-devoured{
+  border: 1px solid green;
   width: 30%;
   padding-left: 120px;
   float: left;
 }
 
 .devoured{
+  border: 1px solid blue;
   width: 30%;
   padding-left: 120px;
   float: left;
@@ -29,6 +31,7 @@ h1{
 
 
 .add-burger{
+  border: 1px solid orange;
   width: 100%;
   float: left;
   
@@ -43,6 +46,7 @@ li {
   }
   
   .label {
+    border: 1px solid purple;
     font-weight: bold;
   }
   
@@ -66,10 +70,12 @@ li {
   }
   
   #btn{
+    border: 1px solid brown;
     margin-left: 20px; 
    
   }
   #brg{
+    border: 1px solid blueviolet;
     width: 250px;
     height: 18px;
   }
