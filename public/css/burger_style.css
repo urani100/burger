@@ -1,6 +1,9 @@
 body{
   background: url("../images/bckgd.png"); 
 }
+p{
+  width: 100%
+}
 
 .container{
   padding-top: 10px;
