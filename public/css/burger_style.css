@@ -18,7 +18,7 @@ h1{
 .not-devoured{
   border: 1px solid green;
   width: 30%;
-  padding-left: 120px;
+  padding-left: 100px;
   float: left;
 }
 
@@ -63,6 +63,7 @@ li {
   }
 
   #brg-label{
+    border: 1px solid hotpink;
     text-align: center;
     font-family: cursive; 
     font-size: 20px;
